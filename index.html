@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Wanzala Collins | IT Portfolio</title>
+
+  <meta name="description" content="Portfolio of Wanzala Collins, Information Technology Specialist.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <header class="side">
+
+    <!-- PROFILE PICTURE -->
+    <div class="profile-container">
+      <img src="profile.image.jpeg"
+           alt="Wanzala Collins profile picture"
+           class="profile-picture">
+    </div>
+
+    <h1 class="name">Wanzala<br>Collins</h1>
+
+    <p class="role">
+      Information Technology Specialist based in Kenya
+    </p>
+
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p class="lead">
+        I am an Information Technology specialist who builds
+        websites, manages databases, analyses data and designs
+        graphics. I enjoy turning complex ideas into practical
+        digital solutions.
+      </p>
+
+      <p>
+        I am passionate about using technology to solve
+        real-world problems and improve people's lives.
+      </p>
+
+      <a href="files/CV.pdf" class="cv-button" download>
+        Download My CV
+      </a>
+    </section>
+
+    <section id="work">
+      <h2>My Projects</h2>
+
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="web">Web</button>
+        <button class="chip" data-filter="mobile">Mobile</button>
+      </div>
+
+      <ul class="projects">
+
+        <li class="project" data-type="web">
+          <h3>Mealora</h3>
+          <p>A modern online food ordering and delivery platform.</p>
+          <p class="tags">HTML, CSS, JavaScript</p>
+          <a href="#">View Project</a>
+        </li>
+
+        <li class="project" data-type="mobile">
+          <h3>FixLink</h3>
+          <p>An ICT fault-reporting and maintenance management application.</p>
+          <p class="tags">Android, Java</p>
+          <a href="#">View Project</a>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+
+      <ul class="skills">
+        <li>Database Management</li>
+        <li>Web Development</li>
+        <li>Data Analysis</li>
+        <li>Graphic Design</li>
+        <li>Android Development</li>
+        <li>Computer Networking</li>
+        <li>Git and GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <p class="direct">
+        <a href="mailto:collinswanzala86@gmail.com">
+          collinswanzala86@gmail.com
+        </a><br>
+
+        <a href="tel:+254708078349">
+          +254 708 078 349
+        </a>
+      </p>
+
+      <form id="contact-form">
+
+        <label>
+          Your name
+          <input name="name" type="text" required>
+        </label>
+
+        <label>
+          Your email
+          <input name="email" type="email" required>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <button type="submit" class="send">
+          Send Message
+        </button>
+
+        <p id="form-status" role="status"></p>
+
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Wanzala Collins. All rights reserved.</p>
+    </footer>
+
+  </main>
+</div>
+
+</body>
+</html>
